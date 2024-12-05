@@ -1,0 +1,153 @@
+* {
+    font-family: "Montserrat", sans-serif !important;
+    font-optical-sizing: auto;
+}
+
+body {
+    background: linear-gradient(to right, #ff7eb3, #ff758c, #ffbc75);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 0;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(53, 53, 53) 0px 0px 10px;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: orange;
+}
+
+main {
+    text-align: center;
+    padding: 50px;
+}
+
+p {
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.boxes-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.box {
+    background-color: white;
+    color: rgb(50, 48, 78);
+    width: 30%;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+}
+
+.box h2 {
+    font-size: auto;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.box p {
+    font-size: 18px;
+    color: rgb(50, 48, 78);
+}
+
+.form-box {
+    background-color: rgb(255, 255, 255);
+    color: rgb(50, 48, 78);
+    width: 50%;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+}
+
+.form-box form {
+    display: flex;
+    align-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.form-box input, .form-box textarea {
+    background-color: rgb(227, 226, 226);
+    width: 100%;
+    min-height: 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-box label {
+    font-weight: bold;
+}
+
+.form-box button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-box button:hover {
+    background-color: darkorange;
+}
+
+div.section > main > h2 {
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(53, 53, 53) 0px 0px 10px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.section {
+    display: none;
+}
+
+.active {
+    display: block;
+}

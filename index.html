@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lv200zofmain</title>
+    <script type="text/javascript" src="scripts/page.js"></script>
+    <script type="text/javascript" src="scripts/forms.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Callum Weller's Website</h1>
+    </header>
+
+    <nav>
+        <a href="#" onclick="showPage('home')">Home</a>
+        <a href="#" onclick="showPage('about')">About</a>
+        <a href="#" onclick="showPage('projects')">Projects</a>
+        <a href="#" onclick="showPage('contact')">Contact</a>
+    </nav>
+
+    <div id="home" class="section">
+        <main>
+            <h2>About Me</h2>
+            <p>Here's a little more about myself, my background, and my journey in web development...</p>
+        </main>
+    </div>
+
+    <div id="about" class="section active">
+        <main>
+            <p>
+                This is my "About Me" page where I will talk about myself, my goals and what I do so far. This will be
+                updated
+            </p>
+
+            <div class="boxes-container">
+                <div class="box">
+                    <h2>About Me!</h2>
+                    <p>I am currently 17 years old, I am studying BTEC Computing at college! I have great interests
+                        within software development as well as cyber security!</p>
+                </div>
+                <div class="box">
+                    <h2>Why am I making a website?</h2>
+                    <p>I am making this website as practice for my teacher. I will try to include as much as I can
+                        attempting to create directories, interactivity, and additional information about myself!</p>
+                </div>
+                <div class="box">
+                    <h2>What have I done so far?</h2>
+                    <p>What I have done so far in my career: I want to potentially get an apprenticeship with Barclays
+                        Bank, either in Cyber Security or Software Development.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="projects" class="section">
+        <main>
+            <h2>Projects</h2>
+            <p>Here are some of the projects I've worked on, showcasing my skills and interests:</p>
+        </main>
+    </div>
+
+    <div id="contact" class="section">
+        <main>
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch with me, please fill out the form below:</p>
+
+            <div class="form-box">
+                <form onsubmit="return handleFormSubmit(event)">
+                    <div class="form-input">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+
+                    <div class="form-input">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+
+                    <div class="form-input">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-input">
+                        <label for="reason">Reason for Contact</label>
+                        <textarea id="reason" name="reason" required></textarea>
+                    </div>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        &copy; 2024 Callum Weller. All rights reserved.
+    </footer>
+</body>
+
+</html>
